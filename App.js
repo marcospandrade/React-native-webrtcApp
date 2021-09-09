@@ -1,10 +1,10 @@
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import LoginScreen from './screens/LoginScreen';
-import CallScreen from './screens/CallScreen';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import CallTeste from './screens/CallTeste';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Stack = createStackNavigator();
 
@@ -15,9 +15,9 @@ const App = () => {
         <Stack.Screen
           name="Login"
           component={LoginScreen}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
-        <Stack.Screen name="Call" component={CallScreen} />
+        <Stack.Screen name="Call" component={CallTeste} />
       </Stack.Navigator>
     </NavigationContainer>
   );
